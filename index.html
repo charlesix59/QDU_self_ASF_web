@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>请假</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h4{
+            color: black;
+            text-align: center;
+            font-family:"微软雅黑",times,serif;
+            font-weight: normal;
+            margin-bottom: 2px;
+            padding-bottom: 2px
+            }
+            div.main{
+                font-family: "微软雅黑";
+                text-indent:32px;
+                font-size: 16px;
+            }
+            a{
+                color: deepskyblue;
+                font-size: 16px;
+                font-weight:500;
+            }
+            h6{
+                font-weight: normal;
+                text-indent: 24px;
+                font-size: 12px;
+                color: gray;
+            }
+            div.top{
+                background-image: linear-gradient(to right,#56d0ff,#3584fa);
+                border-radius: 5px;
+                font-size: 14px;
+                color: white;
+                padding: 10px;
+                text-align: center;
+                margin-bottom: 7px;
+            }
+            div.list{
+                width: 82%;
+                position: relative;
+                left:10%;
+                background-color: white;
+                border: 1px #d6d6d6 solid;
+                padding: 10px;
+                line-height: 1.3em;
+                font-size: 12px;
+            }
+            span.gray{
+                font-size: 10px;
+                color: #6d6d6d;
+            }
+            div.yellow{
+                display: inline;
+                text-align: center;
+                background: #f7bd37;
+                color: white;
+                font-size: 14px;
+                padding: 7px 3.5em;
+                border-radius: 3px;
+                position: relative;
+            }
+            .contain{
+                width: 100%;
+                height: 100%;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body bgcolor="#f6f6f6">
+        <body>
+            <div class="contain" id='temp'>
+                <form action="test.html" method="POST">
+                    姓名：<input type="text" id="name"> <br>
+                    班级：<input type="text" id="class0"> <br>
+                    辅导员姓名：<input type="text" id="teacher"> <br>
+                    电话：<input type="text" id="tel"> <br>
+                    <input type="button" onclick=change() value="提交">
+                </form>
+                <p>本页用HTML与JS写成，请用UI与校园集结号相近的浏览器打开查看，推荐在GITHUB下载源码并用HTML查看器打开。
+                    如果校园集结号更新，本页（大概）会紧随推进更新版本。
+                </p>
+            </div>
+            <script src="form.js"></script>
+        </body>
+        <div class="top">请假申请已被批准通过，请结束后完成销假</div>
+        <div style="position:absolute;text-align: center;float: left;width: 10%;">
+            <div style="color:#d6d6d6;font-size: 17px">●</div>
+            <div style="color:#d6d6d6;font-size: 17px;margin: -9px">|</div>
+            <div style="color:#d6d6d6;font-size: 17px;margin: -9px">|</div>
+            <div style="color:#d6d6d6;font-size: 17px;margin: -9px">|</div>
+            <div style="color:#d6d6d6;font-size: 17px">●</div>
+            <div style="color:#d6d6d6;font-size: 17px;margin: -10px">|</div>
+            <div style="color:#d6d6d6;font-size: 17px;margin: -10px">|</div>
+            <div style="color:#d6d6d6;font-size: 17px;margin: -10px">|</div>
+            <div style="color:#d6d6d6;font-size: 17px;margin: -10px">|</div>
+            <div style="color:#46a1fa;font-size: 17px">●</div>
+        </div>
+        <div class="list">
+            <span class="gray">学生</span>
+            <br>
+            <span id="name1"></span>&nbsp;申请请假
+            <span class="gray" style="position: absolute;right:3em"><span id="data1"></span> &nbsp;20:20</span>
+            <div style="position: absolute;right: 5px;bottom:15px;float:right;"><img src="right.png" width="18px" height="18px"></div>
+        </div>
+        <div class="list">
+            <span class="gray">辅导员</span>
+            <br>
+            <span id="teacher1"></span>&nbsp;审批请假
+            <span class="gray" style="position: absolute;right:3em;"><span id="data2"></span> &nbsp;20:20</span>
+            <div style="position: absolute;right: 5px;bottom:15px;float:right;"><img src="right.png" width="18px" height="18px"></div>
+        </div>
+        <div class="list">
+            <span class="gray">学生</span>
+            <br>
+            <span id="name2"></span>&nbsp;销假申请
+        </div>
+        <main style="background-color:white;margin-bottom: 7px;margin-top: -13px;">
+        <h4>请假申请</h4>
+        尊敬的老师：
+        <br>
+        <br/>
+        <div class='main'>本人<a>
+        <span id="class1"></span>
+        <span id="name0"></span>
+        </a>因<a>事务</a>，需请<a>事假</a>，从<a>
+        <span id="time1"></span>
+        </a> 至<a>
+        <span id="time2"></span>
+        </a> ，不能参加累计<a>0</a>节课程的学习。</div>
+        <div>请假期间，本人将去往<a>校外</a>，详细地址为：<a>青岛大学中心校区</a>，
+            联系人<a>父亲</a>，联系电话<a style='text-decoration: underline'>
+            <span id="tel1"></span>
+            </a> 。</div>
+            ?>
+            <h6 style="margin-top:7px;">本人已签署<a style="font-size: 14px;text-decoration: underline;">承诺书</a>，承诺请假期间严格遵守国家法律法规和校规校纪相关规定，
+            不参加任何非法游行、集会活动，一切安全事故责任自负，按时返校销假，
+            请准假！
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            </h6>
+        </main>
+        <div class="yellow" style="left:5%;right: 5px">申请续假</div>
+        <div class="yellow" style="left:5%;">申请销假</div>
+    </body>
+</html>
