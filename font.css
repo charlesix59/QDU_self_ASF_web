@@ -1,0 +1,15 @@
+.signature{
+	font-family:handwrite, serif;
+	font-size: 2rem;
+}
+@font-face {
+    font-family: roboto;
+    src: url("handwrite.ttf");
+}
+.emoji{
+    font-family: roboto, serif;
+    padding-top: 10%;
+    font-size: 2rem;
+	margin-left: 70%;
+    margin-right: 0;
+}
